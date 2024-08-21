@@ -2,7 +2,8 @@ def add_everything_up(a, b):
 
     try:
         return a + b
-    except TypeError:
+    except TypeError as exc:
+        print(f"Ошибка - {exc}")
         return str(a) + str(b)
 
 
